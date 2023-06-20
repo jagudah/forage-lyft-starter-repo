@@ -9,7 +9,7 @@ class SpindlerBattery(Battery):
     
     def needs_service(self):
         dateInterval = relativedelta.relativedelta(self.current_date, self.last_service_date)
-        if dateInterval.years >= 2:
+        if dateInterval.years >= 3:
             return True
         else:
             return False
